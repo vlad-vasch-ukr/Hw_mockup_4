@@ -1,0 +1,43 @@
+.card-test {
+  position: relative;
+  width: 700px;
+  margin: 100px auto 0 auto;
+  background-color: #0d5825;
+  height: 700px;
+  &__quotation {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    font-size: 20px;
+    p {
+      font-weight: 900;
+      line-height: 35px;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: auto;
+    top: calc(60% - 112.5px);
+    transition: top .2s ease-in;
+    &:hover {
+      top: calc(60% - 150px);
+      cursor: pointer;
+    }
+    &:nth-child(2) {
+      right: calc(50% - 50px);
+      transform: rotate(-22deg);
+      transform-origin: left bottom;
+    }
+    &:nth-child(3) {
+      right: calc(50% - 57px);
+      transform: rotate(-10deg);
+      transform-origin: 0 50%;
+    }
+    &:nth-child(4) {
+      right: calc(50% - 111px);
+      transform: rotate(5deg);
+    }
+  }
+}
